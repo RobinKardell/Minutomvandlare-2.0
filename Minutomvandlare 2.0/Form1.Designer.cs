@@ -34,6 +34,7 @@
             btnConvert = new Button();
             label2 = new Label();
             lblResult = new Label();
+            btnCalcIf = new Button();
             SuspendLayout();
             // 
             // label1
@@ -81,18 +82,30 @@
             lblResult.TabIndex = 4;
             lblResult.Text = "none";
             // 
+            // btnCalcIf
+            // 
+            btnCalcIf.Location = new Point(12, 84);
+            btnCalcIf.Name = "btnCalcIf";
+            btnCalcIf.RightToLeft = RightToLeft.Yes;
+            btnCalcIf.Size = new Size(172, 23);
+            btnCalcIf.TabIndex = 5;
+            btnCalcIf.Text = "Calculate (med If)";
+            btnCalcIf.UseVisualStyleBackColor = true;
+            btnCalcIf.Click += btnCalcIf_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(446, 192);
+            Controls.Add(btnCalcIf);
             Controls.Add(lblResult);
             Controls.Add(label2);
             Controls.Add(btnConvert);
             Controls.Add(txtMinutes);
             Controls.Add(label1);
             Name = "Form1";
-            Text = "Minutomvandlare 2.0";
+            Text = " ";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -105,5 +118,6 @@
         private Button btnConvert;
         private Label label2;
         private Label lblResult;
+        private Button btnCalcIf;
     }
 }
